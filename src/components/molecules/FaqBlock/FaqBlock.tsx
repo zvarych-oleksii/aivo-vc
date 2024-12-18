@@ -1,6 +1,6 @@
 import Card from "@/components/atoms/Card";
 import styles from "./FaqBlock.module.scss";
-import { FC, useState } from "react";
+import { FC } from "react";
 import clsx from "clsx";
 import IconButton from "@/components/atoms/IconButton";
 import Minus from "@/components/atoms/icons/Minus";

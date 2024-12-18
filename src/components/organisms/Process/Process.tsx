@@ -76,7 +76,6 @@ const Process = () => {
                 title={step.title}
                 subtitle={step.subtitle}
                 text={step.description}
-                image=""
               />
             ))}
           </div>

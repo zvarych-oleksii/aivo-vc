@@ -9,14 +9,12 @@ export interface ProcessCardProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
   subtitle: string;
   text: string;
-  image: string;
 }
 
 const ProcessCard: FC<ProcessCardProps> = ({
   title,
   subtitle,
   text,
-  image,
   className,
 }) => {
   return (

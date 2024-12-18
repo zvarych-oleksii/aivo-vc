@@ -1,6 +1,5 @@
 "use client";
 
-import TextArea from "@/components/atoms/TextArea";
 import ApplicationProcess from "@/components/organisms/ApplicationProcess";
 import EvaluationProcess from "@/components/organisms/EvaluationProcess";
 import Faq from "@/components/organisms/Faq";
