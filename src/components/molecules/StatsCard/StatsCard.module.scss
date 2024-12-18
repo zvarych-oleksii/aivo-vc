@@ -1,0 +1,25 @@
+.statsCard {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  &__value {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    color: rgba(197, 199, 200, 1);
+    font-size: 16px;
+  }
+}

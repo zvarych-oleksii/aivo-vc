@@ -1,0 +1,50 @@
+@use "../../../styles/base/_vars.scss" as vars;
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(10, 10, 11, 0.3);
+  z-index: 200;
+  top: 0;
+
+  &__inner {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logoContainer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    background: linear-gradient(
+      90deg,
+      rgba(171, 234, 218, 1),
+      rgba(255, 234, 158, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__logo {
+    height: 25px;
+    width: 94px;
+  }
+
+  &__logoText {
+    line-height: 1;
+    font-size: 15px;
+  }
+
+  &__navList {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 16px;
+  }
+
+  &__navItem--active {
+    color: vars.$accent-color;
+  }
+}

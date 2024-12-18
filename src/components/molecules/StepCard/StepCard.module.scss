@@ -1,0 +1,25 @@
+.stepCard {
+  flex: 1;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__text {
+    font-size: 16px;
+    color: rgba(197, 199, 200, 1);
+  }
+
+  &__number {
+    color: rgba(255, 255, 255, 1);
+    padding: 6px 8px;
+    background-color: rgba(42, 44, 46, 1);
+  }
+}

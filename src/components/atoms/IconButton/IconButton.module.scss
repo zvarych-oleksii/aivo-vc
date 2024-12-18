@@ -1,0 +1,19 @@
+.iconButton {
+  border-radius: 50%;
+  background-color: rgba(32, 34, 36, 1);
+  color: rgba(197, 199, 200, 1);
+  border: 1px solid rgba(42, 44, 46, 1);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease-out;
+  max-height: 54px;
+  max-width: 54px;
+
+  &:hover {
+    background-color: rgba(42, 44, 46, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+}

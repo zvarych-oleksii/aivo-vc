@@ -1,0 +1,27 @@
+.processCard {
+  &__inner {
+    display: flex;
+    align-items: end;
+    gap: 119px;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__imageWrapper {
+    position: relative;
+    height: 300px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+  }
+}

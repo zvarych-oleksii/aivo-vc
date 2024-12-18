@@ -1,0 +1,45 @@
+$color1: #b0f1e1;
+$color2: #ffe89a;
+$color3: #f8c4f8;
+$color4: #dff1ff;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin animated-gradient {
+  background: linear-gradient(90deg, $color1, $color2, $color3, $color4);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.evaluationProcess {
+  color: rgba(10, 10, 11, 1);
+  padding: 80px 0;
+
+  &__inner {
+    @include animated-gradient;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 16px;
+  }
+
+  &__text {
+    font-size: 28px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}

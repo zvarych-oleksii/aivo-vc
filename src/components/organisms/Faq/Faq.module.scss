@@ -1,0 +1,18 @@
+.faq {
+  &__inner {
+    padding: 80px 0;
+  }
+
+  &__content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

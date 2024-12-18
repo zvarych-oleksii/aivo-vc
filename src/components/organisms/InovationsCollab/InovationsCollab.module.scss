@@ -1,0 +1,17 @@
+.inovationCollab {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 119px;
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(42, 44, 46, 1);
+  }
+
+  &__box {
+    margin-top: 22px;
+    max-width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

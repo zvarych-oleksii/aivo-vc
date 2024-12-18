@@ -1,0 +1,16 @@
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__inputs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__textArea {
+    max-height: 143px;
+  }
+}

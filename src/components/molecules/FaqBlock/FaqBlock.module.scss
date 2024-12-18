@@ -1,0 +1,41 @@
+.faqBlock {
+  transition: all 0.5s ease-out;
+
+  &--open {
+    background-color: rgba(32, 34, 36, 1);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  &__answer--open {
+    max-height: 500px;
+  }
+
+  &__box {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &__inner--open {
+    align-items: start;
+  }
+}
