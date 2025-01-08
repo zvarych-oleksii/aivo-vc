@@ -40,10 +40,10 @@ const FounderProfile: FC<FounderProfileProps> = ({
       <div className={styles.founderProfile__general}>
         <h3 className={styles.founderProfile__fullName}>{fullName}</h3>
         <nav className={styles.founderProfile__socialLinks}>
-          <a href={linkedInLink}>
+          <a className={styles.founderProfile__link} href={linkedInLink}>
             <LinkedIn></LinkedIn>
           </a>
-          <a href={facebookLink}>
+          <a className={styles.founderProfile__link} href={facebookLink}>
             <Facebook></Facebook>
           </a>
         </nav>
