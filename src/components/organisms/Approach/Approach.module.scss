@@ -1,0 +1,28 @@
+.approach {
+  padding: 80px 0;
+  &__inner {
+    padding: 15px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  &__item + .approach__item {
+    padding-left: 24px;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 24px;
+    border-right: 1px solid rgba(220, 221, 222, 0.2);
+  }
+}

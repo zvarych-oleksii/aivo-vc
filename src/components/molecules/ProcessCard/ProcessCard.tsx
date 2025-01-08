@@ -16,9 +16,10 @@ const ProcessCard: FC<ProcessCardProps> = ({
   subtitle,
   text,
   className,
+  ...props
 }) => {
   return (
-    <div className={clsx(styles.processCard, className)}>
+    <div className={clsx(styles.processCard, className)} {...props}>
       <div className={styles.processCard__inner}>
         <div className={styles.processCard__content}>
           <SectionSpan>{title}</SectionSpan>

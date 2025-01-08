@@ -11,7 +11,7 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
 
-      <Wrapper>
+      <Wrapper className={styles.hero__wrapper}>
         <div className={styles.hero__inner}>
           <div className={styles.hero__box}>
             <h1 className={clsx(styles.hero__title, styles.hero__highlight)}>

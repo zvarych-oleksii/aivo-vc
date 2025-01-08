@@ -1,0 +1,81 @@
+$color1: #b0f1e1;
+$color2: #ffe89a;
+$color3: #f8c4f8;
+$color4: #dff1ff;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin animated-gradient {
+  background: linear-gradient(90deg, $color1, $color2, $color3, $color4);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.collaborationCard {
+  flex: 1;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__imageWrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: rgba(42, 44, 46, 1);
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  &__header {
+    margin-bottom: 24px;
+    height: 95px;
+  }
+
+  &__advantages {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(197, 199, 200, 1);
+  }
+
+  &__desc {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(197, 199, 200, 1);
+  }
+
+  &__spots {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 24px;
+  }
+
+  &__spotsNum {
+    @include animated-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+  }
+}

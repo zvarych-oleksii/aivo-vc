@@ -3,6 +3,7 @@ import styles from "./InovationsCollab.module.scss";
 import StatsCard from "@/components/molecules/StatsCard";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import SectionSpan from "@/components/atoms/SectionSpan";
+import { SectionsId } from "@/lib/common/enums/sectionsId";
 
 const InovationCollab = () => {
   const num1 = 200;
@@ -10,7 +11,7 @@ const InovationCollab = () => {
   const num3 = 5;
   const num4 = 40;
   return (
-    <section className={styles.inovationCollab}>
+    <section id={SectionsId.Numbers} className={styles.inovationCollab}>
       <Wrapper>
         <div className={styles.inovationCollab__inner}>
           <StatsCard

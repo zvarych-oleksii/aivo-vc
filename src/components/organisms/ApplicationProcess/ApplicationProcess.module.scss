@@ -22,6 +22,12 @@ $color4: #dff1ff;
 }
 
 .applicationProcess {
+  padding: 80px 0;
+  &__steps {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
   &__inner {
     @include animated-gradient;
     padding: 56px;

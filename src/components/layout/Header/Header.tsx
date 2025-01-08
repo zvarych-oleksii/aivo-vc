@@ -1,15 +1,17 @@
+"use client";
 import Wrapper from "@/components/atoms/Wrapper";
 import styles from "./Header.module.scss";
-import Link from "next/link";
-import clsx from "clsx";
 import Logo from "@/components/atoms/icons/Logo";
+import { Link as LinkScroll } from "react-scroll";
+import Link from "next/link";
+import { SectionsId } from "@/lib/common/enums/sectionsId";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Wrapper>
+      <Wrapper className={styles.header__wrapper}>
         <div className={styles.header__inner}>
-          <Link href={""}>
+          <Link href="/">
             <div className={styles.header__logoContainer}>
               <div className={styles.header__logo}>
                 <Logo />
@@ -19,34 +21,77 @@ const Header = () => {
           </Link>
 
           <ul className={styles.header__navList}>
-            <li
-              className={clsx(
-                styles.header__navItem,
-                styles["header__navItem--active"],
-              )}
-            >
-              <Link href={""}>Process</Link>
+            <li className={styles.header__navItem}>
+              <LinkScroll
+                to={SectionsId.Process}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                Process
+              </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>Approach</Link>
+              <LinkScroll
+                to={SectionsId.Approach}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                Approach
+              </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>Team</Link>
+              <LinkScroll
+                to={SectionsId.Team}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                Team
+              </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>Numbers</Link>
+              <LinkScroll
+                to={SectionsId.Numbers}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                Numbers
+              </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
               <Link href={""}>Portfolio</Link>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>Models</Link>
+              <LinkScroll
+                to={SectionsId.Models}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                Models
+              </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
               <Link href={""}>For Investors</Link>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>FAQs</Link>
+              <LinkScroll
+                to={SectionsId.FAQs}
+                smooth={true}
+                spy={true}
+                offset={-70}
+                activeClass={styles["header__navItem--active"]}
+              >
+                FAQs
+              </LinkScroll>
             </li>
           </ul>
         </div>

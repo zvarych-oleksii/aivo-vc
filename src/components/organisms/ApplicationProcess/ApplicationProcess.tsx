@@ -8,6 +8,7 @@ import contactFormSchema, {
   ContactFormInputs,
 } from "@/lib/schemas/chontactFormSchema";
 import Button from "@/components/atoms/Button";
+import StepCard from "@/components/molecules/StepCard";
 
 const ApplicationProcess: React.FC = () => {
   const {
@@ -25,6 +26,23 @@ const ApplicationProcess: React.FC = () => {
   return (
     <section className={styles.applicationProcess}>
       <Wrapper>
+        <div className={styles.applicationProcess__steps}>
+          <StepCard
+            number={1}
+            title="Submit your idea"
+            text="Describe your concept stage, team, target market, goals, problem insights, and team skills briefly."
+          ></StepCard>
+          <StepCard
+            number={2}
+            title="Discovery call to align vision"
+            text="After submission, we'll review your proposal and schedule a call to talk about valuation, equity, and rate reductions."
+          ></StepCard>
+          <StepCard
+            number={3}
+            title="Collaborate to build and scale"
+            text="Collaborate with our tech team to set project timelines and goals that match your vision. Prioritize clear communication and efficient execution to bring your idea to life."
+          ></StepCard>
+        </div>
         <div className={styles.applicationProcess__inner}>
           <div className={styles.applicationProcess__box}>
             <h2 className={styles.applicationProcess__title}>

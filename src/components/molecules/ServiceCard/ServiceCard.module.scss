@@ -1,0 +1,31 @@
+.serviceCard {
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(197, 199, 200, 1);
+  }
+
+  &__imageWrapper {
+    position: relative;
+    margin-bottom: 24px;
+    width: 140px;
+    height: 140px;
+    background: rgba(32, 34, 36, 1);
+    border-radius: 22px;
+  }
+
+  &__image {
+    object-fit: contain;
+    padding: 4px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+}

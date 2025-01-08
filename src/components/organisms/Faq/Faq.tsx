@@ -4,6 +4,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import Wrapper from "@/components/atoms/Wrapper";
 import FaqBlock from "@/components/molecules/FaqBlock";
 import styles from "./Faq.module.scss";
+import { SectionsId } from "@/lib/common/enums/sectionsId";
 
 type FaqItem = {
   id: number;
@@ -40,7 +41,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className={styles.faq}>
+    <section id={SectionsId.FAQs} className={styles.faq}>
       <Wrapper>
         <div className={styles.faq__inner}>
           <div className={styles.faq__header}>
