@@ -9,7 +9,8 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FC<ButtonProps> = ({
-  children, type,
+  children,
+  type,
   className,
   size = "normal",
   color = "primary",
