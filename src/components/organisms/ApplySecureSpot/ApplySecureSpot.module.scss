@@ -1,0 +1,76 @@
+$color1: #b0f1e1;
+$color2: #ffe89a;
+$color3: #f8c4f8;
+$color4: #dff1ff;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin animated-gradient {
+  background: linear-gradient(90deg, $color1, $color2, $color3, $color4);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.applySecureSpot {
+  margin: 146px 0 90px;
+  &__title {
+    margin-bottom: 60px;
+
+    @include animated-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__form {
+    margin-bottom: 48px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 548px;
+  }
+
+  &__btn {
+    width: 100%;
+    @include animated-gradient;
+    color: rgba(10, 10, 11, 1) !important;
+  }
+
+  &__card {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      rgba(171, 234, 218, 1),
+      rgba(141, 254, 168, 1)
+    );
+    justify-content: center;
+    display: flex;
+    padding: 40px 24px;
+    color: rgba(10, 10, 11, 1);
+    border-radius: 16px;
+    gap: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__cardWrapper {
+    margin-top: 30vh;
+  }
+}

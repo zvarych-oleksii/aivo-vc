@@ -5,6 +5,7 @@ import Logo from "@/components/atoms/icons/Logo";
 import { Link as LinkScroll } from "react-scroll";
 import Link from "next/link";
 import { SectionsId } from "@/lib/common/enums/sectionsId";
+import Button from "@/components/atoms/Button";
 
 const Header = () => {
   return (
@@ -94,6 +95,11 @@ const Header = () => {
               </LinkScroll>
             </li>
           </ul>
+          <Link href={"/secure-spot"}>
+            <Button type="button" className={styles.header__btn}>
+              Start Application
+            </Button>
+          </Link>
         </div>
       </Wrapper>
     </header>

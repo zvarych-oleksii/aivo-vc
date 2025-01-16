@@ -1,5 +1,28 @@
 @use "../../../styles/base/_vars.scss" as vars;
 
+$color1: #b0f1e1;
+$color2: #ffe89a;
+$color3: #f8c4f8;
+$color4: #dff1ff;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin animated-gradient {
+  background: linear-gradient(90deg, $color1, $color2, $color3, $color4);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -46,5 +69,12 @@
 
   &__navItem--active {
     color: vars.$accent-color;
+  }
+
+  &__btn {
+    padding: 8px 16px !important;
+    font-size: 16px !important;
+    @include animated-gradient;
+    color: rgba(10, 10, 11, 1) !important;
   }
 }
