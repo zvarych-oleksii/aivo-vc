@@ -5,15 +5,14 @@ import { FC } from "react";
 export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   size?: "small" | "normal";
   color?: "primary" | "secondary";
-  type: "submit" | "button";
+  type?: "submit" | "button" | "reset";
 }
 
 const Button: FC<ButtonProps> = ({
-  children,
+  children, type,
   className,
   size = "normal",
   color = "primary",
-  type = "button",
 }) => {
   return (
     <button
