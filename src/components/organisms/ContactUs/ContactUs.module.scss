@@ -1,0 +1,65 @@
+$color1: #b0f1e1;
+$color2: #ffe89a;
+$color3: #f8c4f8;
+$color4: #dff1ff;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@mixin animated-gradient {
+  background: linear-gradient(90deg, $color1, $color2, $color3, $color4);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.contactUs {
+  margin-bottom: 80px;
+
+  &__content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__box {
+    max-width: 643px;
+    max-height: 188px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600px;
+    margin-bottom: 24px;
+  }
+
+  &__card {
+    padding: 28.5px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include animated-gradient;
+    border-radius: 16px;
+  }
+
+  &__btn {
+    background: transparent !important;
+    color: rgba(10, 10, 11, 1) !important;
+    border: none !important;
+  }
+}

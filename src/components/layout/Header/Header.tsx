@@ -81,9 +81,6 @@ const Header = () => {
               </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>For Investors</Link>
-            </li>
-            <li className={styles.header__navItem}>
               <LinkScroll
                 to={SectionsId.FAQs}
                 smooth={true}
@@ -93,6 +90,9 @@ const Header = () => {
               >
                 FAQs
               </LinkScroll>
+            </li>
+            <li className={styles.header__navItem}>
+              <Link href={"/investors"}>For Investors</Link>
             </li>
           </ul>
           <Link href={"/secure-spot"}>
