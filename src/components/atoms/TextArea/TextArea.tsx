@@ -17,9 +17,12 @@ const TextArea: FC<TextAreaProps> = ({
   ...textareaProps
 }) => {
   return (
-    <div className={clsx(style.textArea, className)}>
+    <div className={style.textArea}>
       {label && <label className={style.textArea__label}>{label}</label>}
-      <textarea className={style.textArea__input} {...textareaProps} />
+      <textarea
+        className={clsx(style.textArea__input, className)}
+        {...textareaProps}
+      />
 
       {error && <InputError error={error} />}
     </div>

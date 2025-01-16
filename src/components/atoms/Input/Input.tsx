@@ -13,7 +13,7 @@ export interface InputProps
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ label = "", placeholder = "", error, mask, ...props }, ref) => {
+  ({ label = "", placeholder = "", error, mask, className, ...props }, ref) => {
     const localRef = useRef<HTMLInputElement | null>(null);
     const inputRef = ref || localRef;
 
@@ -23,7 +23,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           {label && <label className={style.input__label}>{label}</label>}
           {mask ? (
             <IMaskInput
-              className={clsx(style.input__field, {
+              className={clsx(style.input__field, className, {
                 [style["input--error"]]: error,
               })}
               placeholder={placeholder}
@@ -32,7 +32,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             />
           ) : (
             <input
-              className={clsx(style.input__field, {
+              className={clsx(style.input__field, className, {
                 [style["input--error"]]: error,
               })}
               placeholder={placeholder}

@@ -1,0 +1,19 @@
+.applySecureSpotForm {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+
+  &__input,
+  &__textarea {
+    background: rgba(255, 255, 255, 0.05) !important;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 1) !important;
+    color: white !important;
+  }
+
+  &__textarea {
+    height: 285px;
+  }
+}
