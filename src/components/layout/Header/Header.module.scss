@@ -24,9 +24,11 @@ $color4: #dff1ff;
 }
 
 .header {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(10, 10, 11, 0.3);
   position: fixed;
   width: 100%;
-  background: rgba(10, 10, 11, 0.3);
   z-index: 200;
   top: 0;
 
@@ -67,6 +69,10 @@ $color4: #dff1ff;
     font-size: 16px;
   }
 
+  &__navItem {
+    cursor: pointer;
+  }
+
   &__navItem--active {
     color: vars.$accent-color;
   }
@@ -77,4 +83,21 @@ $color4: #dff1ff;
     @include animated-gradient;
     color: rgba(10, 10, 11, 1) !important;
   }
+}
+
+@media(max-width: 1000px) {
+  .header {
+    &__navList {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    &__navList{
+      display: none;
+    }
+  }
+
 }

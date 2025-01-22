@@ -14,3 +14,12 @@
     max-height: 143px;
   }
 }
+
+@media (max-width: 600px) {
+  .contactForm {
+    &__inputs {
+      flex-direction: column;
+      gap: 24px
+    }
+  }
+}

@@ -2,16 +2,40 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    gap: 119px;
+    align-items: flex-end;
+    gap: 6.2vw;
     padding: 80px 0;
     border-bottom: 1px solid rgba(42, 44, 46, 1);
   }
 
   &__box {
-    margin-top: 22px;
     max-width: 548px;
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
+
+  &__stats {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .inovationCollab {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__stats {
+      order: 2;
+      width: 100%;
+    }
+
+    &__box {
+      order: 1;
+      max-width: 100%;
+    }
+  }
+
 }

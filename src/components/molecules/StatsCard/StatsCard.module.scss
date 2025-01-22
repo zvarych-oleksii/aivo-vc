@@ -1,4 +1,5 @@
 .statsCard {
+  padding: 40px;
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8,7 +9,7 @@
   &__box {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   &__value {
@@ -22,4 +23,16 @@
     color: rgba(197, 199, 200, 1);
     font-size: 16px;
   }
+}
+
+@media (max-width: 600px) {
+  .statsCard {
+    &__value {
+      font-size: 32px;
+    }
+    &__label {
+      font-size: 12px;
+    }
+  }
+
 }

@@ -10,6 +10,13 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 80px;
+
+  }
+
+  &__headerScroll {
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(10, 10, 11, 0.3) !important;
   }
 
   &__box {
@@ -45,6 +52,8 @@
     padding: 12px;
     border-radius: 16px;
     background: rgba(32, 34, 36, 1);
+    overflow: auto;
+    scrollbar-width: none;
   }
 
   &__tab--active {

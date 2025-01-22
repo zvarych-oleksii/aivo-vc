@@ -15,7 +15,6 @@ const ServiceCard: FC<ServiceCardProps> = ({
   text,
   ...props
 }) => {
-  console.log(className);
   return (
     <div className={className} {...props}>
       <figure className={styles.serviceCard__imageWrapper}>

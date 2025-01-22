@@ -7,7 +7,6 @@ const Card: FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
   ...props
 }) => {
-  console.log(className);
   return (
     <div className={clsx(styles.card, className)} {...props}>
       {children}

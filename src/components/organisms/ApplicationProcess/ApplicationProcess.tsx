@@ -31,16 +31,19 @@ const ApplicationProcess: React.FC = () => {
             number={1}
             title="Submit your idea"
             text="Describe your concept stage, team, target market, goals, problem insights, and team skills briefly."
+            className={styles.applicationProcess__step}
           ></StepCard>
           <StepCard
             number={2}
             title="Discovery call to align vision"
             text="After submission, we'll review your proposal and schedule a call to talk about valuation, equity, and rate reductions."
+            className={styles.applicationProcess__step}
           ></StepCard>
           <StepCard
             number={3}
             title="Collaborate to build and scale"
             text="Collaborate with our tech team to set project timelines and goals that match your vision. Prioritize clear communication and efficient execution to bring your idea to life."
+            className={styles.applicationProcess__step}
           ></StepCard>
         </div>
         <div className={styles.applicationProcess__inner}>
@@ -59,7 +62,7 @@ const ApplicationProcess: React.FC = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <ContactForm register={register} errors={errors} />
-            <Button>Send Request</Button>
+            <Button className={styles.applicationProcess__btn}>Send Request</Button>
           </form>
         </div>
       </Wrapper>

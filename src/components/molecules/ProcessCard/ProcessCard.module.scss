@@ -1,8 +1,8 @@
 .processCard {
   &__inner {
     display: flex;
-    align-items: end;
-    gap: 119px;
+    align-items: flex-end;
+    gap: 6.5vw;
   }
 
   &__content {
@@ -23,5 +23,22 @@
     align-items: center;
     background: white;
     border-radius: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .processCard {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__imageWrapper {
+      width: 100%;
+      min-height: 300px;
+    }
+    &__content {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }

@@ -49,18 +49,27 @@ $color4: #dff1ff;
     z-index: -1;
   }
 
+  &__box {
+    max-width: 672px;
+  }
+
+  &__text {
+    color:rgba(255, 255, 255, 1);
+  }
+
   &__inner {
     margin-top: 347px;
     position: relative;
     display: flex;
     justify-content: space-between;
     z-index: 2;
-    align-items: end;
+    align-items: flex-end;
   }
 
   &__title {
     font-size: 58px;
     font-weight: 600;
+    margin-bottom: 32px;
   }
 
   &__content {
@@ -85,4 +94,36 @@ $color4: #dff1ff;
     text-fill-color: transparent;
     display: inline-block;
   }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    &__inner {
+      flex-wrap: wrap;
+      gap: 57px;
+      margin-top: 140px;
+    }
+    &__box, &__title, &__content {
+      width: 100%;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+
+      &__title {
+        font-size: 32px;
+      }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__strong {
+      font-size: 32px;
+    }
+  }
+
 }

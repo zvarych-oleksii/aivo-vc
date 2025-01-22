@@ -25,7 +25,10 @@ const FaqBlock: FC<FaqBlockProps> = ({ question, answer, open, ...props }) => {
         })}
       >
         <div className={clsx(styles.faqBlock__box)}>
+          <div className={styles.faqBlock__header}>
           <h4 className={clsx(styles.faqBlock__title)}>{question}</h4>
+          <IconButton>{open ? <Minus /> : <Plus />}</IconButton>
+          </div>
           <p
             className={clsx(styles.faqBlock__answer, {
               [styles["faqBlock__answer--open"]]: open,
@@ -34,7 +37,6 @@ const FaqBlock: FC<FaqBlockProps> = ({ question, answer, open, ...props }) => {
             {answer}
           </p>
         </div>
-        <IconButton>{open ? <Minus /> : <Plus />}</IconButton>
       </div>
     </Card>
   );

@@ -27,6 +27,11 @@ $color4: #dff1ff;
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  &__step {
+    min-width: 300px;
   }
   &__inner {
     @include animated-gradient;
@@ -34,7 +39,7 @@ $color4: #dff1ff;
     border-radius: 16px;
     color: rgba(10, 10, 11, 1);
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 80px;
   }
 
@@ -47,7 +52,53 @@ $color4: #dff1ff;
     max-width: 531px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 20px;
   }
+}
+
+@media (max-width: 1024px) {
+  .applicationProcess {
+    &__inner {
+      gap: 40px;
+    }
+  }
+
+}
+
+@media (max-width: 920px) {
+  .applicationProcess {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .applicationProcess {
+    &__inner {
+      padding: 56px 16px;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .applicationProcess {
+    &__text {
+      font-size: 16px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+
 }
