@@ -15,14 +15,13 @@ const Hero = () => {
         <div className={styles.hero__inner}>
           <div className={styles.hero__box}>
             <h1 className={clsx(styles.hero__title, styles.hero__highlight)}>
-              Tailored Equity <br />
-              Services to Elevate <br />
-              Your Startup
+              Building shared success <br/>
+              One code line at a time
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet business investigation.
-              <br />
-              Stated the second line and the third.
+            <p className={styles.hero__text}>
+              With proven expertise in building and scaling successful software startups, we don’t just code—we co-create. When we believe in your vision, we invest alongside you by reducing our rates in exchange for a small equity stake.
+              <br/>
+              This means we’re as committed to your growth as you are, fully aligning our goals to achieve scalable success together.
             </p>
           </div>
           <div className={styles.hero__content}>

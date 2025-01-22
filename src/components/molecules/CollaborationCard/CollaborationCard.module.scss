@@ -23,6 +23,8 @@ $color4: #dff1ff;
 
 .collaborationCard {
   flex: 1;
+  min-width: 320px;
+  max-width: 360px;
 
   &__inner {
     display: flex;

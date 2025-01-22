@@ -36,3 +36,16 @@
     color: vars.$gray-500;
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    &__inner {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__socialList {
+      display: none;
+    }
+  }
+}

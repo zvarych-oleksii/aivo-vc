@@ -53,3 +53,24 @@ $color4: #dff1ff;
     padding: 11px 20px;
   }
 }
+
+@media (max-width: 1024px) {
+  .collaborationModels {
+
+    &__content {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .collaborationModels {
+    &__btn {
+      width: 100%;
+    }
+  }
+
+}

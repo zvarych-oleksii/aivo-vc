@@ -43,3 +43,27 @@ $color4: #dff1ff;
     font-weight: 600;
   }
 }
+
+@media (max-width: 768px) {
+  .evaluationProcess {
+  &__text {
+    font-size: 22px;
+  }
+    &__inner {
+      padding: 32px 26px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .evaluationProcess {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+  }
+}

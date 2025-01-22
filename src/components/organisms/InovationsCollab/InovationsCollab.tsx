@@ -14,7 +14,7 @@ const InovationCollab = () => {
     <section id={SectionsId.Numbers} className={styles.inovationCollab}>
       <Wrapper>
         <div className={styles.inovationCollab__inner}>
-          <StatsCard
+          <StatsCard className={styles.inovationCollab__stats}
             num1={num1}
             num2={num2}
             num3={num3}
