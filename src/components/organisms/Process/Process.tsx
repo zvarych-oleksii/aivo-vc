@@ -21,51 +21,59 @@ const processSteps: ProcessStep[] = [
   {
     id: "ideation",
     title: "IDEATION",
-    subtitle: "Innovate & Define",
+    subtitle: "Define the Problem",
     description:
-        "Collaborate closely with our team to refine your concept, explore innovative solutions, and establish a clear vision that addresses market needs and user problems.",
+        "We prepare your solution for growth by optimizing SEO, landing pages, and technical infrastructure to handle increased demand. Our team supports scaling sales, developing inbound marketing, running ads, and integrating payment systems and accounting software to streamline back-office operations. We create solutions to establish a robust finance and operational processes to support a maturing company.",
   },
   {
     id: "prototyping",
     title: "PROTOTYPING",
-    subtitle: "Build to Validate",
+    subtitle: "Test the Concept",
     description:
-        "Create a minimum viable product (MVP) that allows you to gather rapid feedback from potential users, ensuring your ideas are aligned with market demands before full-scale development.",
-  },
-  {
-    id: "branding",
-    title: "BRANDING",
-    subtitle: "Establish Your Identity",
-    description:
-        "Create a compelling brand identity that captures your startup’s essence, differentiates you from competitors, and fosters a connection with your audience.",
+        "Our in-house development team rapidly builds a minimum viable product (MVP) to validate your assumptions. Sometimes, this means creating just one core component that tackles the key problem. We get the prototype in front of people quickly and cost-effectively, learning from real-world interactions to refine the idea and pivot where needed.",
   },
   {
     id: "design",
     title: "DESIGN",
-    subtitle: "Craft User Experiences",
+    subtitle: "Shape User Experience",
     description:
-        "Develop a user-centric design that enhances the overall experience, focusing on intuitive interfaces that resonate with your target audience and strengthen your brand identity.",
+        "Our in-house UX researchers and designers collaborate with you to create intuitive workflows and designs that unlock the full value of your solution. By focusing on ease of use and maximizing impact, we ensure your product delivers an exceptional experience.",
   },
   {
-    id: "development",
-    title: "DEVELOPMENT",
-    subtitle: "Transform Ideas into Reality",
+    id: "branding",
+    title: "BRANDING",
+    subtitle: "Communicate Your Vision",
     description:
-        "Build your product with a focus on quality, scalability, and performance, ensuring it meets the evolving needs of your users and stands out in the market.",
+        "Our graphic design team develops a complete visual identity that resonates with your target audience. From logo design and UI components to marketing materials and website visuals, we craft a cohesive brand that communicates your solution clearly and effectively across all media.",
   },
   {
-    id: "support",
-    title: "SUPPORT",
-    subtitle: "Navigate Growth Challenges",
+    id: "marketing",
+    title: "PRODUCT-MARKET FI",
+    subtitle: "Align and Refine",
     description:
-        "Provide ongoing support in operations, finance, and strategy to help you scale effectively, addressing challenges as they arise and optimizing for long-term success.",
+        "We upgrade the MVP with our in-house developers using the branded UX to refine the product based on user feedback. Through embedded tracking, A/B testing, and rapid iterations, we validate the solution’s appeal and usability. This stage establishes reliable metrics, optimizes deployment processes, and ensures the product is sellable, scalable, and aligned with your audience.",
+  },
+
+  {
+    id: "scaling",
+    title: "SCALING",
+    subtitle: "Expand with Purpose",
+    description:
+        "We prepare your solution for growth by optimizing SEO, landing pages, and technical infrastructure to handle increased demand. Our team supports scaling sales, developing inbound marketing, running ads, and integrating payment systems and accounting software to streamline back-office operations. We create solutions to establish a robust finance and operational processes to support a maturing company",
   },
   {
-    id: "networking",
-    title: "NETWORKING",
-    subtitle: "Connect to Opportunities",
+    id: "Funding",
+    title: "FUNDING",
+    subtitle: "Raise with Confidence",
     description:
-        "Leverage our extensive network to secure venture investments and strategic partnerships, enhancing your startup’s visibility and opening doors to new opportunities.",
+        "We connect you with our network of investors, who trust our process and track record. Aivo VC supports you in preparing pitch decks, structuring deals, and navigating legal requirements, ensuring you secure the best possible terms. With proven metrics, a strong foundation, and our guidance, you’ll be well-positioned to raise funds. In some cases, we may invest alongside our network",
+  },
+  {
+    id: "Success",
+    title: "SUCCESS",
+    subtitle: "Achieve the Vision",
+    description:
+        "We help scale your company to its full potential through additional funding rounds, continuous product improvements, and expanding capabilities. Together, we build a profitable, impactful business that reinvests in innovation, maximizing utility and delivering lasting value to the world.*",
   },
 ];
 
@@ -103,8 +111,8 @@ const Process = () => {
                 <SectionSpan>Your Path with us</SectionSpan>
                 <SectionTitle>From Idea to Scale</SectionTitle>
                 <p className={styles.process__text}>
-                  At aivo vc, we excel at turning ideas into thriving businesses
-                  with our structured process.
+                  At Aivo VC, we help software founders refine ideas, gain momentum, and scale. Think of us as the cable railway on your entrepreneurial climb—hop on at any stage, and we’ll fast-track your journey to the summit.
+                  From branding to growth and scaling, we’re here to accelerate your success.
                 </p>
               </div>
             </div>

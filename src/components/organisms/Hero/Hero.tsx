@@ -1,7 +1,10 @@
 import React from "react";
-import styles from "./Hero.module.scss"; // Import the SCSS module
+import styles from "./Hero.module.scss";
 import Wrapper from "@/components/atoms/Wrapper";
 import clsx from "clsx";
+import {Link} from "react-scroll";
+import DownArrow from "@/components/atoms/icons/DownArrow";
+import {SectionsId} from "@/lib/common/enums/sectionsId";
 
 const Hero = () => {
   return (
@@ -34,6 +37,15 @@ const Hero = () => {
               services. <br /> All others will default to <br />
               <span className={styles.hero__bold}>startup pay only</span>.
             </p>
+            <Link className={styles.hero__btn}
+                  to={SectionsId.Models}
+                  smooth={true}
+                  spy={true}
+                  offset={-70}
+            >
+                  <span>All Collaboration Models</span>
+                   <DownArrow />
+            </Link>
           </div>
         </div>
       </Wrapper>

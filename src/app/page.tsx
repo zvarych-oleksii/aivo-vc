@@ -15,11 +15,10 @@ export default function Home() {
     <>
       <Hero></Hero>
         <InovationCollab></InovationCollab>
-      <Process></Process>
+
+        <Process></Process>
       <Approach></Approach>
-
       <Founders></Founders>
-
         <EvaluationProcess></EvaluationProcess>
       <CollaborationModels></CollaborationModels>
       <Faq></Faq>

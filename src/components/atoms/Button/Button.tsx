@@ -14,11 +14,13 @@ const Button: FC<ButtonProps> = ({
   className,
   size = "normal",
   color = "primary",
+    ...props
 }) => {
   return (
     <button
       className={clsx(styles.button, styles[size], styles[color], className)}
       type={type}
+      {...props}
     >
       {children}
     </button>
