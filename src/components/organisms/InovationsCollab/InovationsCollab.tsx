@@ -25,12 +25,10 @@ const InovationCollab = () => {
               Innovation & Collaboration
             </SectionSpan>
             <SectionTitle className={styles.inovationCollab__title}>
-              A headline the main vision and concept
+              Tailored Equity Services to Elevate Your Startup
             </SectionTitle>
             <p className={styles.inovationCollab__text}>
-              A more detailed description of the company that emphasizes the
-              headline and gives a more descriptive idea of the company`s
-              mission.
+              To date, we have helped build 17 companies currently worth $ 45M in enterprise value. We have supported companies secure 60+ funding rounds and 98% of our companies have achieved their stated goals with us.
             </p>
           </div>
         </div>

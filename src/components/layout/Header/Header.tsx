@@ -6,6 +6,7 @@ import { Link as LinkScroll } from "react-scroll";
 import Link from "next/link";
 import { SectionsId } from "@/lib/common/enums/sectionsId";
 import Button from "@/components/atoms/Button";
+import clsx from "clsx";
 
 const Header = () => {
   return (
@@ -67,9 +68,6 @@ const Header = () => {
               </LinkScroll>
             </li>
             <li className={styles.header__navItem}>
-              <Link href={""}>Portfolio</Link>
-            </li>
-            <li className={styles.header__navItem}>
               <LinkScroll
                 to={SectionsId.Models}
                 smooth={true}
@@ -91,7 +89,7 @@ const Header = () => {
                 FAQs
               </LinkScroll>
             </li>
-            <li className={styles.header__navItem}>
+            <li className={clsx(styles.header__navItem, styles.header__inverstorsLink)}>
               <Link href={"/investors"}>For Investors</Link>
             </li>
           </ul>

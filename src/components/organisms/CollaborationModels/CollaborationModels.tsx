@@ -37,7 +37,7 @@ const CollaborationModels = () => {
             <SectionTitle>Unlocking Potential Together</SectionTitle>
             <p className={styles.collaborationModels__desc}>
               Explore our tailored collaboration models designed to meet the
-              unique needs of startups while fostering mutual growth and
+              unique <br/> needs of startups while fostering mutual growth and
               success.
             </p>
           </div>

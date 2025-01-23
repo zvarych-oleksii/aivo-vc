@@ -38,13 +38,48 @@ $color4: #dff1ff;
     padding: 56px;
     border-radius: 16px;
     color: rgba(10, 10, 11, 1);
-    display: flex;
-    align-items: flex-start;
-    gap: 80px;
+    //display: flex;
+    //align-items: flex-start;
+    //gap: 80px;
   }
 
   &__title {
     margin-bottom: 24px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__boxTitle {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__boxText {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+
+  &__boxBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(15px);
+      }
+    }
   }
 
   &__form {
@@ -84,6 +119,18 @@ $color4: #dff1ff;
     &__inner {
       padding: 56px 16px;
     }
+
+    &__box {
+      align-items: flex-start;
+    }
+
+    &__boxText {
+      text-align: start;
+    }
+
+    &__boxBtn {
+      width: 100%;
+    }
   }
 
 }
@@ -98,6 +145,15 @@ $color4: #dff1ff;
     }
     &__btn {
       width: 100%;
+    }
+
+    &__boxTitle {
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    &__fontText {
+      font-size: 16px;
     }
   }
 
