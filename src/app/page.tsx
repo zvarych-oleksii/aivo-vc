@@ -9,14 +9,15 @@ import Founders from "@/components/organisms/Founders";
 import Hero from "@/components/organisms/Hero";
 import InovationCollab from "@/components/organisms/InovationsCollab";
 import Process from "@/components/organisms/Process";
+import Portfolio from "@/components/organisms/Portfolio";
 
 export default function Home() {
   return (
     <>
       <Hero></Hero>
         <InovationCollab></InovationCollab>
-
         <Process></Process>
+        <Portfolio></Portfolio>
       <Approach></Approach>
       <Founders></Founders>
         <EvaluationProcess></EvaluationProcess>

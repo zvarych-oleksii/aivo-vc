@@ -19,6 +19,7 @@
     "react-imask": "^7.6.1",
     "react-infinite-logo-slider": "^1.1.4",
     "react-scroll": "^1.9.0",
+    "swiper": "^11.2.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {

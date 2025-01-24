@@ -20,8 +20,6 @@ const LogoCarousel = () => {
                 duration={30}
                 blurBorders={false}
                 width="150px"
-                height="100px"
-
             >
                 {logos.map((logo, index) => (
                     <img

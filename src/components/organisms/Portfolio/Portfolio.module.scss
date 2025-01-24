@@ -1,0 +1,140 @@
+.portfolio {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+      margin: 0 auto;
+      padding: 0 0 0 15px;
+      overflow: visible;
+      max-width: 1150px;
+      clip-path: inset( -100vw -100vw -100vw 0 );
+      padding-bottom: 92px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 453px;
+  }
+
+  &__slide {
+    padding: 40px;
+  }
+
+  &__slideInner {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__slideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 414px;
+  }
+
+  &__slideTitle {
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+  }
+
+  &__slideText {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(197, 199, 200, 1);
+  }
+
+  &__slideLogo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+
+  &__slideImageWrapper {
+    position: relative;
+    height: 414px;
+    min-width: 200px;
+    width: 356px;
+  }
+
+  &__slideImage {
+    object-fit: contain;
+  }
+  &__slideTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__navButton {
+    width: 52px ;
+    height: 52px ;
+    border: 1px solid rgba(42, 44, 46, 1);
+    border-radius: 50%;
+    background-color: rgba(32, 34, 36, 1);
+    position: absolute;
+    bottom: -100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nextButton {
+    left: 67px;
+  }
+
+  &__slideWrapper {
+    width: 83%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+
+    &__inner {
+      padding-right: 15px;
+    }
+
+    &__slide {
+      padding: 16px;
+    }
+
+    &__slideInner {
+      flex-wrap: wrap;
+      gap: 80px;
+      justify-content: center;
+    }
+
+    &__slideImageWrapper {
+      width: 314px;
+    }
+
+    &__slideWrapper {
+      width: 100%;
+    }
+    &__box {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+}
