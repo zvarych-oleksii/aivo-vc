@@ -55,6 +55,7 @@ $color4: #dff1ff;
 
   &__text {
     color:rgba(255, 255, 255, 1);
+    font-size: 18px;
   }
 
   &__inner {
@@ -67,7 +68,7 @@ $color4: #dff1ff;
   }
 
   &__title {
-    font-size: 58px;
+    font-size: 56px;
     font-weight: 600;
     margin-bottom: 32px;
   }
@@ -150,6 +151,7 @@ $color4: #dff1ff;
 
 @media (max-width: 1024px) {
   .hero {
+    height: 120vh;
     &__inner {
       flex-wrap: wrap;
       gap: 57px;
@@ -175,6 +177,10 @@ $color4: #dff1ff;
 
     &__strong {
       font-size: 32px;
+    }
+
+    &__btn {
+      padding: 12px 24px !important;
     }
   }
 

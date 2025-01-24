@@ -32,5 +32,31 @@
     &::placeholder {
       color: rgba(10, 10, 11, 0.5);
     }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 5px;
+      overflow: auto;
+      box-sizing: content-box;
+      padding-right: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+    }
+
   }
 }

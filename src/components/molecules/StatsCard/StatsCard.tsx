@@ -23,19 +23,19 @@ const StatsCard: FC<StatsCardProps> = ({
       <div className={styles.statsCard__inner}>
         <div className={styles.statsCard__box}>
           <p className={styles.statsCard__value}>${num1}M</p>
-          <label className={styles.statsCard__label}>Number label</label>
+          <label className={styles.statsCard__label}>VALUE CREATED</label>
         </div>
         <div className={styles.statsCard__box}>
           <p className={styles.statsCard__value}>{num2}+</p>
-          <label className={styles.statsCard__label}>Number label</label>
+          <label className={styles.statsCard__label}>FUNDING ROUNDS</label>
         </div>
         <div className={styles.statsCard__box}>
           <p className={styles.statsCard__value}>{num3}+</p>
-          <label className={styles.statsCard__label}>Number label</label>
+          <label className={styles.statsCard__label}>PORTFOLIO COMPANIES</label>
         </div>
         <div className={styles.statsCard__box}>
           <p className={styles.statsCard__value}>{num4}%</p>
-          <label className={styles.statsCard__label}>Number label</label>
+          <label className={styles.statsCard__label}>SUCCESS RATE</label>
         </div>
       </div>
     </Card>
