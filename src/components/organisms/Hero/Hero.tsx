@@ -5,6 +5,7 @@ import clsx from "clsx";
 import {Link} from "react-scroll";
 import DownArrow from "@/components/atoms/icons/DownArrow";
 import {SectionsId} from "@/lib/common/enums/sectionsId";
+import LogoCarousel from "@/components/molecules/LogoCarousel/LogoCarousel";
 
 const Hero = () => {
   return (
@@ -49,6 +50,7 @@ const Hero = () => {
           </div>
         </div>
       </Wrapper>
+      <LogoCarousel/>
     </section>
   );
 };

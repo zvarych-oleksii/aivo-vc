@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
           <ul className={styles.footer__socialList}>
             <li className={styles.footer__socialItem}>
-              <Link href={""}>
+              <Link target={"_blank"} href={"https://www.linkedin.com/"}>
                 <div className={styles.footer__socialIcon}>
                   <LinkedIn />
                 </div>
@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
 
             <li className={styles.footer__socialItem}>
-              <Link href={""}>
+              <Link target={"_blank"} href={"https://www.facebook.com/"}>
                 <div className={styles.footer__socialIcon}>
                   <Facebook />
                 </div>
