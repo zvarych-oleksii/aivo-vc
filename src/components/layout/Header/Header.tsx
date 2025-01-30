@@ -69,6 +69,17 @@ const Header = () => {
             </li>
             <li className={styles.header__navItem}>
               <LinkScroll
+                  to={SectionsId.Portfolio}
+                  smooth={true}
+                  spy={true}
+                  offset={-70}
+                  activeClass={styles["header__navItem--active"]}
+              >
+                Portfolio
+              </LinkScroll>
+            </li>
+            <li className={styles.header__navItem}>
+              <LinkScroll
                 to={SectionsId.Models}
                 smooth={true}
                 spy={true}

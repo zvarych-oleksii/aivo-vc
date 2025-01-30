@@ -68,6 +68,7 @@ const ApplySecureSpotForm: FC<ApplySecureSpotFormProps> = ({
       <TextArea
         className={styles.applySecureSpotForm__textarea}
         label="Describe your idea"
+        placeholder={"Describe your product, current stage you are in, the progress you've made."}
         {...register("ideaDescription", {
           required: "Description is required",
         })}

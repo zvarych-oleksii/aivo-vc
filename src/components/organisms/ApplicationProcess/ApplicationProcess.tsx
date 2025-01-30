@@ -6,6 +6,8 @@ import StepCard from "@/components/molecules/StepCard";
 import RightArrow from "@/components/atoms/icons/RightArrow";
 import {useRouter} from "next/navigation";
 import {FC} from "react";
+import SectionSpan from "@/components/atoms/SectionSpan";
+import SectionTitle from "@/components/atoms/SectionTitle";
 
 const ApplicationProcess: FC = () => {
   // const {
@@ -27,6 +29,10 @@ const ApplicationProcess: FC = () => {
   return (
     <section className={styles.applicationProcess}>
       <Wrapper>
+        <div className={styles.applicationProcess__header}>
+          <SectionSpan>Application Process</SectionSpan>
+          <SectionTitle>And That`s How It Works</SectionTitle>
+        </div>
         <div className={styles.applicationProcess__steps}>
           <StepCard
             number={1}
