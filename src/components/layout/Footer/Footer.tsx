@@ -1,8 +1,6 @@
 import Wrapper from "@/components/atoms/Wrapper";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import LinkedIn from "@/components/atoms/icons/LinkedIn";
-import Facebook from "@/components/atoms/icons/Facebook";
 import Logo from "@/components/atoms/icons/Logo";
 
 const Footer = () => {
