@@ -11,6 +11,7 @@ import {Navigation } from "swiper/modules";
 
 import RightArrow from "@/components/atoms/icons/RightArrow";
 import LeftArrow from "@/components/atoms/icons/LeftArrow";
+import {SectionsId} from "@/lib/common/enums/sectionsId";
  const portfolioSlides = [
     {
         id: 1,
@@ -72,7 +73,7 @@ const NavigationButtons = () => {
 const Portfolio = () => {
 
     return (
-        <section className={styles.portfolio}>
+        <section className={styles.portfolio} id={SectionsId.Portfolio}>
             <Wrapper>
                 <div className={styles.portfolio__header}>
                     <SectionSpan>Portfolio</SectionSpan>

@@ -5,6 +5,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import CollaborationCard from "@/components/molecules/CollaborationCard";
 import Button from "@/components/atoms/Button";
 import { SectionsId } from "@/lib/common/enums/sectionsId";
+import {redirect} from "next/navigation";
 
 const collaborationData = [
   {
@@ -53,7 +54,7 @@ const CollaborationModels = () => {
             ))}
           </div>
           <div className={styles.collaborationModels__footer}>
-            <Button className={styles.collaborationModels__btn}>
+            <Button onClick={() => redirect('/secure-spot')} className={styles.collaborationModels__btn}>
               Start Application
             </Button>
           </div>

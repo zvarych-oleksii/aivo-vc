@@ -90,6 +90,13 @@ $color4: #dff1ff;
     align-items: flex-end;
     gap: 20px;
   }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 1024px) {

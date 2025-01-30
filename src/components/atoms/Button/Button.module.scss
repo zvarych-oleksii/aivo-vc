@@ -4,6 +4,10 @@
   font-weight: 500;
   font-family: inherit;
   transition: all 0.5s ease-out;
+
+  &--disabled {
+    cursor: not-allowed;
+  }
 }
 
 .small {
@@ -37,3 +41,5 @@
     border: 1px solid rgba(42, 44, 46, 1);
   }
 }
+
+

@@ -8,11 +8,9 @@
 
   &__inner {
       margin: 0 auto;
-      padding: 0 0 0 15px;
-      overflow: visible;
+      padding: 0 0 120px 15px;
+      overflow: hidden;
       max-width: 1150px;
-      clip-path: inset( -100vw -100vw -100vw 0 );
-      padding-bottom: 92px;
   }
 
   &__box {
