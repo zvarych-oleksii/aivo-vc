@@ -1,1 +1,1 @@
-export { default } from "./CollaborationModels";
+export {default} from "./CollaborationModels";

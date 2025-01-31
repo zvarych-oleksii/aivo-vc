@@ -85,6 +85,7 @@
     &__inner {
       padding: 40px 16px;
     }
+
     &__header {
       flex-direction: column;
       gap: 24px;
@@ -94,6 +95,7 @@
     &__content {
       gap: 24px;
     }
+
     &__subTitle {
       max-width: 100%;
     }
@@ -123,6 +125,10 @@
 
     &__team {
       grid-template-columns: repeat(1, 1fr);
+    }
+    &__subTitle {
+      font-size: 16px;
+      line-height: 23px;
     }
   }
 }

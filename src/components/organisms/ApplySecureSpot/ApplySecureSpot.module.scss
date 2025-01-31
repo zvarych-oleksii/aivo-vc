@@ -23,6 +23,7 @@ $color4: #dff1ff;
 
 .applySecureSpot {
   margin: 146px 0 90px;
+
   &__title {
     margin-bottom: 60px;
 
@@ -77,9 +78,9 @@ $color4: #dff1ff;
     flex-direction: column;
     text-align: center;
     background: linear-gradient(
-      to bottom,
-      rgba(171, 234, 218, 1),
-      rgba(141, 254, 168, 1)
+                    to bottom,
+                    rgba(171, 234, 218, 1),
+                    rgba(141, 254, 168, 1)
     );
     justify-content: center;
     display: flex;

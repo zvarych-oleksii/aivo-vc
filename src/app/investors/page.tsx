@@ -3,18 +3,21 @@
 import Approach from "@/components/organisms/Approach/Approach";
 import Faq from "@/components/organisms/Faq";
 import Founders from "@/components/organisms/Founders";
-import Hero from "@/components/organisms/Hero";
 import InovationCollab from "@/components/organisms/InovationsCollab";
 import ContactUs from "@/components/organisms/ContactUs";
+import InvestorsHero from "@/components/organisms/InvestorsHero";
+import {InvestorsSectionsId} from "@/lib/common/enums/investorsSectionsId";
+import Portfolio from "@/components/organisms/Portfolio";
 
 export default function Page() {
     return (
         <>
-            <Hero></Hero>
-            <InovationCollab></InovationCollab>
-            <Approach></Approach>
-            <Founders></Founders>
-            <Faq></Faq>
+            <InvestorsHero></InvestorsHero>
+            <InovationCollab id={InvestorsSectionsId.Numbers}></InovationCollab>
+            <Approach id={InvestorsSectionsId.Approach}></Approach>
+            <Founders id={InvestorsSectionsId.Team}></Founders>
+            <Portfolio id={InvestorsSectionsId.Portfolio}/>
+            <Faq id={InvestorsSectionsId.FAQs}></Faq>
             <ContactUs></ContactUs>
         </>
     );

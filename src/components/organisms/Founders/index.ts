@@ -1,1 +1,1 @@
-export { default } from "./Founders";
+export {default} from "./Founders";

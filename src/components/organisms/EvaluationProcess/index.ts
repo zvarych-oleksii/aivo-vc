@@ -1,1 +1,1 @@
-export { default } from "./EvaluationProcess";
+export {default} from "./EvaluationProcess";

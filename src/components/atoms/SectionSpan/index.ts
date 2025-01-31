@@ -1,1 +1,1 @@
-export { default } from "./SectionSpan";
+export {default} from "./SectionSpan";
