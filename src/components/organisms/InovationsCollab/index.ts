@@ -1,1 +1,1 @@
-export { default } from "./InovationsCollab";
+export {default} from "./InovationsCollab";

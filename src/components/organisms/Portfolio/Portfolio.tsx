@@ -7,12 +7,12 @@ import SectionSpan from "@/components/atoms/SectionSpan";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import Image from "next/image";
 import Tag from "@/components/atoms/Tag";
-import {Navigation } from "swiper/modules";
+import {Navigation} from "swiper/modules";
 
 import RightArrow from "@/components/atoms/icons/RightArrow";
 import LeftArrow from "@/components/atoms/icons/LeftArrow";
-import {SectionsId} from "@/lib/common/enums/sectionsId";
- const portfolioSlides = [
+
+const portfolioSlides = [
     {
         id: 1,
         title: "Life Ltd: Creating Smarter Digital Connections",
@@ -70,17 +70,18 @@ const NavigationButtons = () => {
     );
 };
 
-const Portfolio = () => {
+const Portfolio = ({id}: { id: string }) => {
 
     return (
-        <section className={styles.portfolio} id={SectionsId.Portfolio}>
+        <section className={styles.portfolio} id={id}>
             <Wrapper>
                 <div className={styles.portfolio__header}>
                     <SectionSpan>Portfolio</SectionSpan>
                     <div className={styles.portfolio__box}>
-                        <SectionTitle>Proven Success <br /> Stories</SectionTitle>
+                        <SectionTitle>Proven Success <br/> Stories</SectionTitle>
                         <p className={styles.portfolio__text}>
-                            Our expertise is reflected in the success of the startups we’ve partnered with. Here are a few examples of how we’ve helped turn innovative ideas into thriving businesses.
+                            Our expertise is reflected in the success of the startups we’ve partnered with. Here are a
+                            few examples of how we’ve helped turn innovative ideas into thriving businesses.
                         </p>
                     </div>
                 </div>

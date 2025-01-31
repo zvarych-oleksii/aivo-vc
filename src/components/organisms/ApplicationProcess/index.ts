@@ -1,1 +1,1 @@
-export { default } from "./ApplicationProcess";
+export {default} from "./ApplicationProcess";

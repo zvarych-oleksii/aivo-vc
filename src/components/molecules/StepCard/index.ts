@@ -1,1 +1,1 @@
-export { default } from "./StepCard";
+export {default} from "./StepCard";

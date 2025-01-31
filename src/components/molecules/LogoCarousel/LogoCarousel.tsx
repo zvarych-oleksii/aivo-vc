@@ -26,7 +26,7 @@ const LogoCarousel = () => {
                         key={index}
                         src={logo}
                         alt={`Logo ${index + 1}`}
-                        style={{ width: "105px", height: "54px", objectFit: "contain", marginLeft: "72px"}}
+                        style={{width: "105px", height: "54px", objectFit: "contain", marginLeft: "72px"}}
                     />
                 ))}
             </InfiniteLogoSlider>

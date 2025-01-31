@@ -1,1 +1,1 @@
-export { default } from "./ApplySecureSpotForm";
+export {default} from "./ApplySecureSpotForm";

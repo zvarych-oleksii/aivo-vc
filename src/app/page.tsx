@@ -10,20 +10,21 @@ import Hero from "@/components/organisms/Hero";
 import InovationCollab from "@/components/organisms/InovationsCollab";
 import Process from "@/components/organisms/Process";
 import Portfolio from "@/components/organisms/Portfolio";
+import {LandingSectionsId} from "@/lib/common/enums/landingSectionsId";
 
 export default function Home() {
-  return (
-    <>
-      <Hero></Hero>
-        <InovationCollab></InovationCollab>
-        <Process></Process>
-        <Portfolio></Portfolio>
-      <Approach></Approach>
-      <Founders></Founders>
-        <EvaluationProcess></EvaluationProcess>
-      <CollaborationModels></CollaborationModels>
-      <Faq></Faq>
-      <ApplicationProcess></ApplicationProcess>
-    </>
-  );
+    return (
+        <>
+            <Hero></Hero>
+            <InovationCollab id={LandingSectionsId.Numbers}></InovationCollab>
+            <Process id={LandingSectionsId.Process}></Process>
+            <Portfolio id={LandingSectionsId.Portfolio}></Portfolio>
+            <Approach id={LandingSectionsId.Approach}></Approach>
+            <Founders id={LandingSectionsId.Team}></Founders>
+            <EvaluationProcess></EvaluationProcess>
+            <CollaborationModels id={LandingSectionsId.Models}></CollaborationModels>
+            <Faq id={LandingSectionsId.FAQs}></Faq>
+            <ApplicationProcess></ApplicationProcess>
+        </>
+    );
 }

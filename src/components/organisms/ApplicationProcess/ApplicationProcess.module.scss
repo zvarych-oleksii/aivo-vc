@@ -23,6 +23,7 @@ $color4: #dff1ff;
 
 .applicationProcess {
   padding: 80px 0;
+
   &__steps {
     display: flex;
     gap: 24px;
@@ -33,6 +34,7 @@ $color4: #dff1ff;
   &__step {
     min-width: 300px;
   }
+
   &__inner {
     @include animated-gradient;
     padding: 56px;
@@ -147,9 +149,11 @@ $color4: #dff1ff;
     &__text {
       font-size: 16px;
     }
+
     &__title {
       font-size: 24px;
     }
+
     &__btn {
       width: 100%;
     }

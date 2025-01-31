@@ -1,1 +1,1 @@
-export { default } from "./ProcessCard";
+export {default} from "./ProcessCard";

@@ -1,5 +1,6 @@
 .statsCard {
   padding: 40px;
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,6 +31,7 @@
     &__value {
       font-size: 32px;
     }
+
     &__label {
       font-size: 12px;
     }

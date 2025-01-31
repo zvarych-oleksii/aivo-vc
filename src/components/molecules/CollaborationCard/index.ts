@@ -1,1 +1,1 @@
-export { default } from "./CollaborationCard";
+export {default} from "./CollaborationCard";
