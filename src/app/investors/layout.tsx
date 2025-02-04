@@ -8,18 +8,16 @@ export const metadata: Metadata = {
     description: "Aivo VC",
 };
 
-export default function RootLayout({
+export default function InvestorsLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-        <body>
+        <>
         <InvestorsHeader/>
         <main>{children}</main>
         <Footer/>
-        </body>
-        </html>
+        </>
     );
 }

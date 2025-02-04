@@ -8,17 +8,19 @@ import ContactUs from "@/components/organisms/ContactUs";
 import InvestorsHero from "@/components/organisms/InvestorsHero";
 import {InvestorsSectionsId} from "@/lib/common/enums/investorsSectionsId";
 import Portfolio from "@/components/organisms/Portfolio";
+import ForInvestors from "@/components/organisms/ForInvestors/ForInvestors";
 
 export default function Page() {
     return (
         <>
             <InvestorsHero></InvestorsHero>
+            <ForInvestors id={InvestorsSectionsId.ForInvestors}></ForInvestors>
             <InovationCollab id={InvestorsSectionsId.Numbers}></InovationCollab>
             <Approach id={InvestorsSectionsId.Approach}></Approach>
             <Founders id={InvestorsSectionsId.Team}></Founders>
             <Portfolio id={InvestorsSectionsId.Portfolio}/>
             <Faq id={InvestorsSectionsId.FAQs}></Faq>
-            <ContactUs></ContactUs>
+            <ContactUs id={InvestorsSectionsId.ContactUs}></ContactUs>
         </>
     );
 }

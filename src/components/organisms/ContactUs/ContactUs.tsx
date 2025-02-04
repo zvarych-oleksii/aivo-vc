@@ -4,15 +4,31 @@ import SectionSpan from "@/components/atoms/SectionSpan";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
+import { SendEmailData } from "@/lib/schemas/sendEmail";
+import { useForm } from "react-hook-form";
+import { useForm as useFormspree } from "@formspree/react";
 
-const ContactUs = () => {
+const ContactUs = ({ id }: { id: string }) => {
+    const form = useForm<SendEmailData>();
+    const {
+        formState: { errors },
+        register,
+        handleSubmit: rhfHandleSubmit,
+    } = form;
+
+    const [state, formspreeHandleSubmit] = useFormspree<SendEmailData>("xldgnaqg");
+
+    const onSubmit = async (data: SendEmailData) => {
+        await formspreeHandleSubmit(data);
+    };
+
     return (
-        <section className={styles.contactUs}>
+        <section id={id} className={styles.contactUs}>
             <Wrapper>
                 <div className={styles.contactUs__inner}>
                     <div className={styles.contactUs__header}>
                         <SectionSpan>Contact us</SectionSpan>
-                        <SectionTitle>And That`s How It Works</SectionTitle>
+                        <SectionTitle>And That’s How It Works</SectionTitle>
                     </div>
                     <div className={styles.contactUs__content}>
                         <div className={styles.contactUs__box}>
@@ -25,12 +41,17 @@ const ContactUs = () => {
                                 success.
                             </p>
                         </div>
-                        <div className={styles.contactUs__card}>
-                            <Input placeholder={"Your email"}></Input>
-                            <Button className={styles.contactUs__btn}>
-                                Receive Investment Offers
+                        {/* Corrected form submission */}
+                        <form onSubmit={rhfHandleSubmit(onSubmit)} className={styles.contactUs__card}>
+                            <Input
+                                {...register("email", { required: "Email is required" })}
+                                error={errors.email?.message}
+                                placeholder="Your email"
+                            />
+                            <Button type="submit" className={styles.contactUs__btn} disabled={state.submitting}>
+                                {state.submitting ? "Submitting..." : "Receive Investment Offers"}
                             </Button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </Wrapper>

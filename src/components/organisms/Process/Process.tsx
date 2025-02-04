@@ -8,6 +8,10 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import ProcessCard from "@/components/molecules/ProcessCard";
 import {Link} from "react-scroll";
 import clsx from "clsx";
+import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
+import {Navigation} from "swiper/modules";
+import LeftArrow from "@/components/atoms/icons/LeftArrow";
+import RightArrow from "@/components/atoms/icons/RightArrow";
 
 interface ProcessStep {
     id: string;
@@ -75,6 +79,28 @@ const processSteps: ProcessStep[] = [
             "We help scale your company to its full potential through additional funding rounds, continuous product improvements, and expanding capabilities. Together, we build a profitable, impactful business that reinvests in innovation, maximizing utility and delivering lasting value to the world.*",
     },
 ];
+
+
+const NavigationButtons = () => {
+    const swiper = useSwiper();
+
+    return (
+        <div className={styles.process__navButtons}>
+            <button
+                className={`${styles.process__navButton} ${styles.process__prevButton}`}
+                onClick={() => swiper.slidePrev()}
+            >
+                <LeftArrow/>
+            </button>
+            <button
+                className={`${styles.process__navButton} ${styles.process__nextButton}`}
+                onClick={() => swiper.slideNext()}
+            >
+                <RightArrow/>
+            </button>
+        </div>
+    );
+};
 
 const Process = ({id}: { id: string }) => {
     const [isSticky, setIsSticky] = useState(false);
@@ -148,6 +174,27 @@ const Process = ({id}: { id: string }) => {
                                 text={step.description}
                             />
                         ))}
+                    </div>
+                    <div className={styles.process__slider}>
+                        <Swiper
+                            modules={[Navigation]}
+                            spaceBetween={30}
+                            slidesPerView={"auto"}
+                            loop={true}
+                        >
+
+                            {processSteps.map((step) => (
+                                <SwiperSlide key={step.id} className={styles.process__slide}>
+                                    <ProcessCard
+                                        id={step.id}
+                                        title={step.title}
+                                        subtitle={step.subtitle}
+                                        text={step.description}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                            <NavigationButtons></NavigationButtons>
+                        </Swiper>
                     </div>
                 </div>
             </Wrapper>

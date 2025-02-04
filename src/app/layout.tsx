@@ -1,8 +1,6 @@
 import type {Metadata} from "next";
 import "../styles/style.scss";
 import "swiper/swiper-bundle.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "Aivo VC",
@@ -15,11 +13,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html>
         <body>
-        <Header/>
-        <main>{children}</main>
-        <Footer/>
+        {children}
         </body>
         </html>
     );

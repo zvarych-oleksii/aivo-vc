@@ -3,7 +3,8 @@ import styles from "./InvestorsHero.module.scss";
 import Wrapper from "@/components/atoms/Wrapper";
 import clsx from "clsx";
 import LogoCarousel from "@/components/molecules/LogoCarousel/LogoCarousel";
-import Link from "next/link";
+import {Link as LinkScroll} from "react-scroll";
+import {InvestorsSectionsId} from "@/lib/common/enums/investorsSectionsId";
 
 const InvestorsHero = () => {
     return (
@@ -26,11 +27,15 @@ const InvestorsHero = () => {
                         </p>
                     </div>
                     <div className={styles.hero__content}>
-                        <Link className={styles.hero__btn}
-                              href={'/'}
-                        >
-                            <span>Receive Investment Offer</span>
-                        </Link>
+                            <LinkScroll
+                                className={styles.hero__btn}
+                                to={InvestorsSectionsId.ContactUs}
+                                smooth={true}
+                                spy={true}
+                                offset={-70}
+                            >
+                                <span>Receive Investment Offer</span>
+                            </LinkScroll>
                     </div>
                 </div>
             </Wrapper>

@@ -8,18 +8,17 @@ export const metadata: Metadata = {
     description: "Aivo VC",
 };
 
-export default function RootLayout({
+export default function SecureSpotLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-        <body>
+
+        <>
         <SecureSpotHeader/>
         <main>{children}</main>
         <Footer/>
-        </body>
-        </html>
+        </>
     );
 }
