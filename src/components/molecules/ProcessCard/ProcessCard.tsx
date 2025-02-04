@@ -9,6 +9,7 @@ export interface ProcessCardProps extends HTMLAttributes<HTMLDivElement> {
     title: string;
     subtitle: string;
     text: string;
+    image?:string;
 }
 
 const ProcessCard: FC<ProcessCardProps> = ({
@@ -16,6 +17,7 @@ const ProcessCard: FC<ProcessCardProps> = ({
                                                subtitle,
                                                text,
                                                className,
+                                               image,
                                                ...props
                                            }) => {
     return (
@@ -28,7 +30,7 @@ const ProcessCard: FC<ProcessCardProps> = ({
                 </div>
                 <figure className={styles.processCard__imageWrapper}>
                     <Image
-                        src={"/images/Container.jpg"}
+                        src={image? image: "/images/Container.jpg"}
                         alt="Process Step"
                         layout="fill"
                         objectFit="cover"

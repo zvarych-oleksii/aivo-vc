@@ -18,6 +18,7 @@ interface ProcessStep {
     title: string;
     subtitle: string;
     description: string;
+    image?: string;
 }
 
 const processSteps: ProcessStep[] = [
@@ -27,6 +28,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Define the Problem",
         description:
             "We prepare your solution for growth by optimizing SEO, landing pages, and technical infrastructure to handle increased demand. Our team supports scaling sales, developing inbound marketing, running ads, and integrating payment systems and accounting software to streamline back-office operations. We create solutions to establish a robust finance and operational processes to support a maturing company.",
+        image: '/images/process/ideation.svg'
     },
     {
         id: "prototyping",
@@ -34,6 +36,8 @@ const processSteps: ProcessStep[] = [
         subtitle: "Test the Concept",
         description:
             "Our in-house development team rapidly builds a minimum viable product (MVP) to validate your assumptions. Sometimes, this means creating just one core component that tackles the key problem. We get the prototype in front of people quickly and cost-effectively, learning from real-world interactions to refine the idea and pivot where needed.",
+
+        image: '/images/process/prototyping.svg'
     },
     {
         id: "design",
@@ -41,6 +45,8 @@ const processSteps: ProcessStep[] = [
         subtitle: "Shape User Experience",
         description:
             "Our in-house UX researchers and designers collaborate with you to create intuitive workflows and designs that unlock the full value of your solution. By focusing on ease of use and maximizing impact, we ensure your product delivers an exceptional experience.",
+
+        image: '/images/process/design.svg'
     },
     {
         id: "branding",
@@ -48,6 +54,8 @@ const processSteps: ProcessStep[] = [
         subtitle: "Communicate Your Vision",
         description:
             "Our graphic design team develops a complete visual identity that resonates with your target audience. From logo design and UI components to marketing materials and website visuals, we craft a cohesive brand that communicates your solution clearly and effectively across all media.",
+
+        image: '/images/process/branding.svg'
     },
     {
         id: "marketing",
@@ -55,6 +63,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Align and Refine",
         description:
             "We upgrade the MVP with our in-house developers using the branded UX to refine the product based on user feedback. Through embedded tracking, A/B testing, and rapid iterations, we validate the solution’s appeal and usability. This stage establishes reliable metrics, optimizes deployment processes, and ensures the product is sellable, scalable, and aligned with your audience.",
+
     },
 
     {
@@ -172,6 +181,7 @@ const Process = ({id}: { id: string }) => {
                                 title={step.title}
                                 subtitle={step.subtitle}
                                 text={step.description}
+                                image={step.image}
                             />
                         ))}
                     </div>
@@ -190,6 +200,7 @@ const Process = ({id}: { id: string }) => {
                                         title={step.title}
                                         subtitle={step.subtitle}
                                         text={step.description}
+                                        image={step.image}
                                     />
                                 </SwiperSlide>
                             ))}
