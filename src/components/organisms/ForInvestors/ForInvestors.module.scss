@@ -1,0 +1,95 @@
+.forInvestors {
+  &__inner {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(42, 44, 46, 1);
+  }
+
+  &__card {
+    padding: 56px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__divider {
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 40px 0;
+    background-color: rgba(42, 44, 46, 1);
+  }
+
+  &__featureList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  &__imageWrapper {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
+  &__featureTitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
+  }
+
+  &__featureDesc {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 920px) {
+  .forInvestors {
+    &__featureList {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .forInvestors {
+    &__title {
+      margin-bottom: 16px;
+      font-size: 28px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__card {
+      padding: 16px;
+    }
+
+    &__featureList {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    &__featureItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

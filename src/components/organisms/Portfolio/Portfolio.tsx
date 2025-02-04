@@ -90,7 +90,7 @@ const Portfolio = ({id}: { id: string }) => {
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={24}
-                    slidesPerView={"auto"}
+                    slidesPerView={1}
                     loop={true}
                 >
 

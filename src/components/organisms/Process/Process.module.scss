@@ -69,6 +69,39 @@
     border-radius: 12px;
     cursor: pointer;
   }
+
+  &__navButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__navButton {
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(42, 44, 46, 1);
+    border-radius: 50%;
+    background-color: rgba(32, 34, 36, 1);
+    position: absolute;
+    bottom: -100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__prevButton {
+    right: 52%;
+  }
+
+  &__nextButton {
+    left: 52%;
+  }
+
+  &__slider {
+    display: none;
+  }
 }
 
 
@@ -77,6 +110,22 @@
     &__text {
       font-size: 16px;
     }
+
+    &__content {
+      display: none;
+    }
+
+    &__tabs {
+      display: none;
+    }
+
+    &__slider {
+      display: block;
+      margin: 56px auto 0;
+      overflow: hidden;
+      padding-bottom: 160px;
+    }
   }
+
 
 }

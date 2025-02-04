@@ -6,21 +6,25 @@ import {Link as LinkScroll} from "react-scroll";
 import Link from "next/link";
 import Button from "@/components/atoms/Button";
 import {InvestorsSectionsId} from "@/lib/common/enums/investorsSectionsId";
+import {useRouter} from "next/navigation";
 
 const InvestorsHeader = () => {
+
+    const router = useRouter();
+
+    const handleRedirect = () => {
+        router.push('/');
+    };
     return (
         <header className={styles.header}>
             <Wrapper className={styles.header__wrapper}>
                 <div className={styles.header__inner}>
-                    <Link href="/">
-                        <div className={styles.header__logoContainer}>
+                        <div onClick={handleRedirect} className={styles.header__logoContainer}>
                             <div className={styles.header__logo}>
                                 <Logo/>
                             </div>
                             <span className={styles.header__logoText}>startups</span>
                         </div>
-                    </Link>
-
                     <ul className={styles.header__navList}>
                         <li className={styles.header__navItem}>
                             <LinkScroll
