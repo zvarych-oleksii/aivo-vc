@@ -8,6 +8,7 @@ import {useRouter} from "next/navigation";
 import {FC} from "react";
 import SectionSpan from "@/components/atoms/SectionSpan";
 import SectionTitle from "@/components/atoms/SectionTitle";
+import {CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 const ApplicationProcess: FC = () => {
     // const {
@@ -33,7 +34,7 @@ const ApplicationProcess: FC = () => {
                     <SectionSpan>Application Process</SectionSpan>
                     <SectionTitle>And That`s How It Works</SectionTitle>
                 </div>
-                <div className={styles.applicationProcess__steps}>
+                <CardAnimatedWrapper className={styles.applicationProcess__steps}>
                     <StepCard
                         number={1}
                         title="Submit your idea"
@@ -52,7 +53,7 @@ const ApplicationProcess: FC = () => {
                         text="Collaborate with our tech team to set project timelines and goals that match your vision. Prioritize clear communication and efficient execution to bring your idea to life."
                         className={styles.applicationProcess__step}
                     ></StepCard>
-                </div>
+                </CardAnimatedWrapper>
                 <div className={styles.applicationProcess__inner}>
                     {/*<div className={styles.applicationProcess__box}>*/}
                     {/*  <h2 className={styles.applicationProcess__title}>*/}
