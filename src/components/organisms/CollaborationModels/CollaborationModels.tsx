@@ -5,6 +5,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import CollaborationCard from "@/components/molecules/CollaborationCard";
 import Button from "@/components/atoms/Button";
 import {redirect} from "next/navigation";
+import {CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 const collaborationData = [
     {
@@ -41,7 +42,7 @@ const CollaborationModels = ({id}: { id: string }) => {
                             success.
                         </p>
                     </div>
-                    <div className={styles.collaborationModels__content}>
+                    <CardAnimatedWrapper className={styles.collaborationModels__content}>
                         {collaborationData.map((data, index) => (
                             <CollaborationCard
                                 key={index}
@@ -51,7 +52,7 @@ const CollaborationModels = ({id}: { id: string }) => {
                                 spotsNum={data.spotsNum}
                             />
                         ))}
-                    </div>
+                    </CardAnimatedWrapper>
                     <div className={styles.collaborationModels__footer}>
                         <Button onClick={() => redirect('/secure-spot')} className={styles.collaborationModels__btn}>
                             Start Application

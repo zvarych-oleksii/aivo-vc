@@ -1,8 +1,8 @@
-import Card from "@/components/atoms/Card";
 import clsx from "clsx";
 import {FC, HTMLAttributes} from "react";
 import styles from "./CollaborationCard.module.scss";
 import Image from "next/image";
+import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface CollaborationCardProps extends HTMLAttributes<HTMLDivElement> {
     title: string;
@@ -21,8 +21,9 @@ const CollaborationCard: FC<CollaborationCardProps> = ({
                                                            className,
                                                        }) => {
     return (
-        <Card className={clsx(styles.collaborationCard, className)}>
+        <AnimatedCard className={clsx(styles.collaborationCard, className)}>
             <div className={styles.collaborationCard__inner}>
+                { imageSrc &&
                 <figure className={styles.collaborationCard__imageWrapper}>
                     <Image
                         src={imageSrc}
@@ -32,6 +33,7 @@ const CollaborationCard: FC<CollaborationCardProps> = ({
                         className={styles.collaborationCard__image}
                     />
                 </figure>
+                }
                 <div className={styles.collaborationCard__header}>
                     <h3 className={styles.collaborationCard__title}>{title}</h3>
                     <span className={styles.collaborationCard__advantages}>
@@ -55,7 +57,7 @@ const CollaborationCard: FC<CollaborationCardProps> = ({
                     </p>
                 )}
             </div>
-        </Card>
+        </AnimatedCard>
     );
 };
 

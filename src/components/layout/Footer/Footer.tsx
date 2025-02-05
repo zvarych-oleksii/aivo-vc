@@ -31,7 +31,7 @@ const Footer = () => {
                     {/*  </li>*/}
                     {/*</ul>*/}
                     <p className={styles.footer__copyrights}>
-                        Copyright &copy; 2024 aivo vc
+                        Copyright &copy; {new Date().getFullYear()} aivo vc
                     </p>
                 </div>
             </Wrapper>
