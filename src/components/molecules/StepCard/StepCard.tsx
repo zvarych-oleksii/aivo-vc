@@ -1,7 +1,7 @@
-import Card from "@/components/atoms/Card";
 import styles from "./StepCard.module.scss";
 import {FC, HTMLAttributes} from "react";
 import clsx from "clsx";
+import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface StepCardProps extends HTMLAttributes<HTMLDivElement> {
     number: number;
@@ -17,7 +17,7 @@ const StepCard: FC<StepCardProps> = ({
                                          ...props
                                      }) => {
     return (
-        <Card className={clsx(styles.stepCard, className)} {...props}>
+        <AnimatedCard className={clsx(styles.stepCard, className)} {...props}>
             <div className={styles.stepCard__inner}>
                 <span className={styles.stepCard__number}>Step {number}</span>
                 <div className={styles.stepCard__content}>
@@ -25,7 +25,7 @@ const StepCard: FC<StepCardProps> = ({
                     <p className={styles.stepCard__text}>{text}</p>
                 </div>
             </div>
-        </Card>
+        </AnimatedCard>
     );
 };
 
