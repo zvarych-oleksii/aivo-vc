@@ -22,7 +22,7 @@ const InvestorsHeader = () => {
                     <ul className={styles.header__navList}>
                         <li className={styles.header__navItem}>
                             <LinkScroll
-                                to={InvestorsSectionsId.About}
+                                to={InvestorsSectionsId.ForInvestors}
                                 smooth={true}
                                 spy={true}
                                 offset={-70}
