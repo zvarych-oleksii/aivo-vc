@@ -78,7 +78,7 @@ const Portfolio = ({id}: { id: string }) => {
                 <div className={styles.portfolio__header}>
                     <SectionSpan>Portfolio</SectionSpan>
                     <div className={styles.portfolio__box}>
-                        <SectionTitle>Proven Success <br/> Stories</SectionTitle>
+                        <SectionTitle>Proven Success Stories</SectionTitle>
                         <p className={styles.portfolio__text}>
                             Our expertise is reflected in the success of the startups we’ve partnered with. Here are a
                             few examples of how we’ve helped turn innovative ideas into thriving businesses.

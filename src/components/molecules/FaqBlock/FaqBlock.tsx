@@ -5,6 +5,7 @@ import clsx from "clsx";
 import IconButton from "@/components/atoms/IconButton";
 import Minus from "@/components/atoms/icons/Minus";
 import Plus from "@/components/atoms/icons/Plus";
+import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface FaqBlockProps extends React.HTMLAttributes<HTMLDivElement> {
     question: string;

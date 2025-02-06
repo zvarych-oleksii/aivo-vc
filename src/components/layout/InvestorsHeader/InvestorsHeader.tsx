@@ -6,25 +6,19 @@ import {Link as LinkScroll} from "react-scroll";
 import Link from "next/link";
 import Button from "@/components/atoms/Button";
 import {InvestorsSectionsId} from "@/lib/common/enums/investorsSectionsId";
-import {useRouter} from "next/navigation";
+import clsx from "clsx";
 
 const InvestorsHeader = () => {
-
-    const router = useRouter();
-
-    const handleRedirect = () => {
-        router.push('/');
-    };
     return (
         <header className={styles.header}>
             <Wrapper className={styles.header__wrapper}>
                 <div className={styles.header__inner}>
-                        <div onClick={handleRedirect} className={styles.header__logoContainer}>
+                        <Link href={'/'} className={styles.header__logoContainer}>
                             <div className={styles.header__logo}>
                                 <Logo/>
                             </div>
-                            <span className={styles.header__logoText}>startups</span>
-                        </div>
+                            <span className={styles.header__logoText}>investors</span>
+                        </Link>
                     <ul className={styles.header__navList}>
                         <li className={styles.header__navItem}>
                             <LinkScroll
@@ -91,6 +85,9 @@ const InvestorsHeader = () => {
                             >
                                 FAQs
                             </LinkScroll>
+                        </li>
+                        <li className={clsx(styles.header__navItem, styles.header__inverstorsLink)}>
+                            <Link href={"/"}>For Startups</Link>
                         </li>
                     </ul>
                     <Link href={"/secure-spot"}>

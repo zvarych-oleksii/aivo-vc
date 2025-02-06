@@ -8,26 +8,34 @@ import Button from "@/components/atoms/Button";
 import Wrapper from "@/components/atoms/Wrapper";
 import { SecureSpotData } from "@/lib/schemas/secureSpot";
 import CheckCircle from "@/components/atoms/icons/CheckCircle";
+import Confetti from "react-confetti";
+import { useEffect, useState } from "react";
 
 const ApplySecureSpot = () => {
-    const form = useForm<SecureSpotData>({
-        mode: "onChange",
-    });
+    const form = useForm<SecureSpotData>();
 
     const {
-        formState: { isValid },
-        handleSubmit: rhfHandleSubmit, // renamed for clarity
+        handleSubmit: rhfHandleSubmit,
     } = form;
 
     const [state, formspreeHandleSubmit] = useFormspree<SecureSpotData>("movjdgao");
+    const [showConfetti, setShowConfetti] = useState(false);
 
     const onSubmit = async (data: SecureSpotData) => {
         await formspreeHandleSubmit(data);
     };
 
+    useEffect(() => {
+        if (state.succeeded) {
+            setShowConfetti(true);
+            setTimeout(() => setShowConfetti(false), 10000);
+        }
+    }, [state.succeeded]);
+
     if (state.succeeded) {
         return (
             <section className={styles.applySecureSpot}>
+                {showConfetti && <Confetti />}
                 <Wrapper>
                     <div className={styles.applySecureSpot__cardWrapper}>
                         <div className={styles.applySecureSpot__card}>
@@ -49,7 +57,6 @@ const ApplySecureSpot = () => {
                         Apply now to secure your spot
                     </h1>
 
-                    {/* Properly wrapped handleSubmit */}
                     <form onSubmit={rhfHandleSubmit(onSubmit)}>
                         <ApplySecureSpotForm
                             className={styles.applySecureSpot__form}
@@ -58,7 +65,6 @@ const ApplySecureSpot = () => {
                         <Button
                             className={styles.applySecureSpot__btn}
                             type="submit"
-                            disabled={state.submitting || !isValid}
                         >
                             {state.submitting ? "Submitting..." : "Next"}
                         </Button>

@@ -31,6 +31,7 @@ $ciBlue: rgba(254, 180, 75, 1);
 
   &::before {
     content: "";
+    z-index: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -52,6 +53,6 @@ $ciBlue: rgba(254, 180, 75, 1);
   background-color: rgba(19, 21, 23, 1);
   border-radius: inherit;
   transition: all 0.25s;
-  height: calc(100% - 0.2rem);
-  width: calc(100% - 0.2rem);
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
 }

@@ -4,6 +4,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import Wrapper from "@/components/atoms/Wrapper";
 import FaqBlock from "@/components/molecules/FaqBlock";
 import styles from "./Faq.module.scss";
+import {CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 type FaqItem = {
     id: number;
@@ -65,7 +66,7 @@ const Faq = ({id}: { id: string }) => {
                         <SectionSpan>FAQs</SectionSpan>
                         <SectionTitle>Frequently Asked Questions</SectionTitle>
                     </div>
-                    <div className={styles.faq__content}>
+                    <CardAnimatedWrapper className={styles.faq__content}>
                         {faqData.map((faq) => (
                             <FaqBlock
                                 key={faq.id}
@@ -75,7 +76,7 @@ const Faq = ({id}: { id: string }) => {
                                 onClick={() => handleFaqClick(faq.id)}
                             />
                         ))}
-                    </div>
+                    </CardAnimatedWrapper>
                 </div>
             </Wrapper>
         </section>
