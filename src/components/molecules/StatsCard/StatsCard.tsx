@@ -2,7 +2,6 @@ import Card from "@/components/atoms/Card";
 import styles from "./StatsCard.module.scss";
 import clsx from "clsx";
 import {FC, HTMLAttributes} from "react";
-import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface StatsCardProps extends HTMLAttributes<HTMLDivElement> {
     num1: number;

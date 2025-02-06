@@ -7,7 +7,6 @@ import Link from "next/link";
 import {LandingSectionsId} from "@/lib/common/enums/landingSectionsId";
 import Button from "@/components/atoms/Button";
 import clsx from "clsx";
-import {useRouter} from "next/navigation";
 
 const Header = () => {
     return (
