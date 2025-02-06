@@ -18,7 +18,7 @@ const ForInvestors = ({id}: {id: string}) => {
                         <li className={styles.forInvestors__featureItem}>
                             <figure className={styles.forInvestors__imageWrapper}>
                                 <Image
-                                    src="/images/for-investors/vetting-process.jpg"
+                                    src="/images/for-investors/vetting-process.svg"
                                     alt="Rigorous Vetting Process"
                                     layout="fill"
                                     objectFit="cover"
@@ -34,7 +34,7 @@ const ForInvestors = ({id}: {id: string}) => {
                         <li className={styles.forInvestors__featureItem}>
                             <figure className={styles.forInvestors__imageWrapper}>
                                 <Image
-                                    src="/images/for-investors/curated-portfolio.jpg"
+                                    src="/images/for-investors/curated-portfolio.svg"
                                     alt="Curated Portfolio"
                                     layout="fill"
                                     objectFit="cover"
@@ -51,7 +51,7 @@ const ForInvestors = ({id}: {id: string}) => {
                         <li className={styles.forInvestors__featureItem}>
                             <figure className={styles.forInvestors__imageWrapper}>
                                 <Image
-                                    src="/images/for-investors/collaboration.jpg"
+                                    src="/images/for-investors/collaboration.svg"
                                     alt="Opportunities for Collaboration"
                                     layout="fill"
                                     objectFit="cover"
@@ -67,7 +67,7 @@ const ForInvestors = ({id}: {id: string}) => {
                         <li className={styles.forInvestors__featureItem}>
                             <figure className={styles.forInvestors__imageWrapper}>
                                 <Image
-                                    src="/images/for-investors/exclusive-deals.jpg"
+                                    src="/images/for-investors/exclusive-deals.svg"
                                     alt="Exclusive Deals"
                                     layout="fill"
                                     objectFit="cover"
