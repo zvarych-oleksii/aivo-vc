@@ -13,12 +13,6 @@
 
   }
 
-  &__headerScroll {
-    -webkit-backdrop-filter: blur(10px) !important;
-    backdrop-filter: blur(10px) !important;
-    background: rgba(10, 10, 11, 0.3) !important;
-  }
-
   &__box {
     display: flex;
     flex-direction: column;

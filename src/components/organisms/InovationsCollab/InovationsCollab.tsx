@@ -3,6 +3,7 @@ import styles from "./InovationsCollab.module.scss";
 import StatsCard from "@/components/molecules/StatsCard";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import SectionSpan from "@/components/atoms/SectionSpan";
+import {CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 const InovationCollab = ({id}: { id: string }) => {
     const num1 = 200;
@@ -12,7 +13,7 @@ const InovationCollab = ({id}: { id: string }) => {
     return (
         <section id={id} className={styles.inovationCollab}>
             <Wrapper>
-                <div className={styles.inovationCollab__inner}>
+                <CardAnimatedWrapper className={styles.inovationCollab__inner}>
                     <StatsCard className={styles.inovationCollab__stats}
                                num1={num1}
                                num2={num2}
@@ -32,7 +33,7 @@ const InovationCollab = ({id}: { id: string }) => {
                             their stated goals with us.
                         </p>
                     </div>
-                </div>
+                </CardAnimatedWrapper>
             </Wrapper>
         </section>
     );

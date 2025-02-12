@@ -1,10 +1,10 @@
-import Card from "@/components/atoms/Card";
 import styles from "./FaqBlock.module.scss";
 import {FC} from "react";
 import clsx from "clsx";
 import IconButton from "@/components/atoms/IconButton";
 import Minus from "@/components/atoms/icons/Minus";
 import Plus from "@/components/atoms/icons/Plus";
+import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface FaqBlockProps extends React.HTMLAttributes<HTMLDivElement> {
     question: string;
@@ -14,7 +14,7 @@ export interface FaqBlockProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const FaqBlock: FC<FaqBlockProps> = ({question, answer, open, ...props}) => {
     return (
-        <Card
+        <AnimatedCard
             className={clsx(styles.faqBlock, {
                 [styles["faqBlock--open"]]: open,
             })}
@@ -39,7 +39,7 @@ const FaqBlock: FC<FaqBlockProps> = ({question, answer, open, ...props}) => {
                     </p>
                 </div>
             </div>
-        </Card>
+        </AnimatedCard>
     );
 };
 

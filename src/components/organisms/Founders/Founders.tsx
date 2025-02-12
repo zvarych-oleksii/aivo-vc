@@ -29,7 +29,7 @@ const foundersData = [
 
 const teamRoles = [
     {
-        title: "Create Strategist",
+        title: "Creative Strategist",
         description:
             "Shapes your startup’s vision into a concrete, actionable plan while aligning with market trends and user needs.",
         imageSrc: "/images/team/strategist.svg",
