@@ -10,7 +10,7 @@ const InvestorsHero = () => {
     return (
         <section className={styles.hero}>
             <video autoPlay muted loop className={styles.hero__background}>
-                <source src="/videos/hero1.mp4" type="video/mp4"/>
+                <source src="/videos/hero2.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
 

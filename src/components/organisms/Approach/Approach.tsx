@@ -9,7 +9,7 @@ const Approach = ({id}: { id: string }) => {
             <div className={styles.approach__inner}>
                 <div className={styles.approach__header}>
                     <SectionSpan>OUR Approach</SectionSpan>
-                    <SectionTitle>The Aivo Approach</SectionTitle>
+                    <SectionTitle>The aivo Approach</SectionTitle>
                 </div>
                 <div className={styles.approach__content}>
                     <ServiceCard

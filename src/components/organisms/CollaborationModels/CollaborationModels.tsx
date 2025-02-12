@@ -9,7 +9,7 @@ import {CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCard
 
 const collaborationData = [
     {
-        title: "Startup Pay Only",
+        title: "Pay per day only",
         advantages: ["Full control", "Full ownership"],
         desc: "Full development rate paid by the startup, allowing for complete control and ownership of the project.",
         spotsNum: "unlimited",
