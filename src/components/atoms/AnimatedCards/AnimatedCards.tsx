@@ -7,7 +7,7 @@ interface CardAnimatedWrapperProps {
     className?: string;
 }
 
-interface AnimatedCardProps {
+export interface AnimatedCardProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: ReactNode;
     className?: string;
 }
@@ -19,15 +19,25 @@ const CardAnimatedWrapper: React.FC<CardAnimatedWrapperProps> = ({ children, cla
         if (!wrapperRef.current) return;
 
         const cards = wrapperRef.current.querySelectorAll(`.${styles.card}`) as NodeListOf<HTMLDivElement>;
+
         cards.forEach((card) => {
             const rect = card.getBoundingClientRect();
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
 
+            // Оновлюємо головну картку
             card.style.setProperty("--xPos", `${x}px`);
             card.style.setProperty("--yPos", `${y}px`);
+
+            // Отримуємо всі вкладені div і оновлюємо їх
+            const nestedDivs = card.querySelectorAll("div") as NodeListOf<HTMLDivElement>;
+            nestedDivs.forEach((nestedDiv) => {
+                nestedDiv.style.setProperty("--xPos", `${x}px`);
+                nestedDiv.style.setProperty("--yPos", `${y}px`);
+            });
         });
     };
+
 
     return (
         <div className={clsx(styles.cards, className)} ref={wrapperRef} onMouseMove={handleMouseMove}>
@@ -36,9 +46,9 @@ const CardAnimatedWrapper: React.FC<CardAnimatedWrapperProps> = ({ children, cla
     );
 };
 
-const AnimatedCard: React.FC<AnimatedCardProps> = ({ className, children }) => {
+const AnimatedCard: React.FC<AnimatedCardProps> = ({ className, children, ...props }) => {
     return (
-        <div className={clsx(styles.card, className)}>
+        <div className={clsx(styles.card, className)} {...props}>
             <div className={styles.cardContent}>{children}</div>
         </div>
     );

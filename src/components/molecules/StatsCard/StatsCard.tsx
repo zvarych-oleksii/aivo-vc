@@ -1,7 +1,7 @@
-import Card from "@/components/atoms/Card";
 import styles from "./StatsCard.module.scss";
 import clsx from "clsx";
 import {FC, HTMLAttributes} from "react";
+import {AnimatedCard} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 export interface StatsCardProps extends HTMLAttributes<HTMLDivElement> {
     num1: number;
@@ -19,7 +19,7 @@ const StatsCard: FC<StatsCardProps> = ({
                                            ...props
                                        }) => {
     return (
-        <Card className={clsx(styles.statsCard, className)} {...props}>
+        <AnimatedCard className={clsx(styles.statsCard, className)} {...props}>
             <div className={styles.statsCard__inner}>
                 <div className={styles.statsCard__box}>
                     <p className={styles.statsCard__value}>${num1}M</p>
@@ -38,7 +38,7 @@ const StatsCard: FC<StatsCardProps> = ({
                     <label className={styles.statsCard__label}>SUCCESS RATE</label>
                 </div>
             </div>
-        </Card>
+        </AnimatedCard>
     );
 };
 

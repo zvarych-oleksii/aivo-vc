@@ -1,6 +1,5 @@
 import React from "react";
 import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
-import Card from "@/components/atoms/Card";
 import Wrapper from "@/components/atoms/Wrapper";
 import styles from './Portfolio.module.scss';
 import SectionSpan from "@/components/atoms/SectionSpan";
@@ -11,6 +10,7 @@ import {Navigation} from "swiper/modules";
 
 import RightArrow from "@/components/atoms/icons/RightArrow";
 import LeftArrow from "@/components/atoms/icons/LeftArrow";
+import {AnimatedCard, CardAnimatedWrapper} from "@/components/atoms/AnimatedCards/AnimatedCards";
 
 const portfolioSlides = [
     {
@@ -86,7 +86,7 @@ const Portfolio = ({id}: { id: string }) => {
                     </div>
                 </div>
             </Wrapper>
-            <div className={styles.portfolio__inner}>
+            <CardAnimatedWrapper className={styles.portfolio__inner}>
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={24}
@@ -96,7 +96,7 @@ const Portfolio = ({id}: { id: string }) => {
 
                     {portfolioSlides.map((slide) => (
                         <SwiperSlide key={slide.id} className={styles.portfolio__slideWrapper}>
-                            <Card className={styles.portfolio__slide}>
+                            <AnimatedCard className={styles.portfolio__slide}>
                                 <div className={styles.portfolio__slideInner}>
                                     <div className={styles.portfolio__slideContent}>
                                         <figure className={styles.portfolio__slideLogo}>
@@ -129,12 +129,12 @@ const Portfolio = ({id}: { id: string }) => {
                                         />
                                     </figure>
                                 </div>
-                            </Card>
+                            </AnimatedCard>
                         </SwiperSlide>
                     ))}
                     <NavigationButtons/>
                 </Swiper>
-            </div>
+            </CardAnimatedWrapper>
         </section>
     );
 };
