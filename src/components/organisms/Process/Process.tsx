@@ -63,6 +63,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Align and Refine",
         description:
             "We upgrade the MVP with our in-house developers using the branded UX to refine the product based on user feedback. Through embedded tracking, A/B testing, and rapid iterations, we validate the solution’s appeal and usability. This stage establishes reliable metrics, optimizes deployment processes, and ensures the product is sellable, scalable, and aligned with your audience.",
+        image: '/images/process/product-market.svg'
 
     },
 
@@ -72,6 +73,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Expand with Purpose",
         description:
             "We prepare your solution for growth by optimizing SEO, landing pages, and technical infrastructure to handle increased demand. Our team supports scaling sales, developing inbound marketing, running ads, and integrating payment systems and accounting software to streamline back-office operations. We create solutions to establish a robust finance and operational processes to support a maturing company",
+        image: '/images/process/scaling.svg'
     },
     {
         id: "Funding",
@@ -79,6 +81,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Raise with Confidence",
         description:
             "We connect you with our network of investors, who trust our process and track record. Aivo VC supports you in preparing pitch decks, structuring deals, and navigating legal requirements, ensuring you secure the best possible terms. With proven metrics, a strong foundation, and our guidance, you’ll be well-positioned to raise funds. In some cases, we may invest alongside our network",
+        image: '/images/process/funding.svg'
     },
     {
         id: "Success",
@@ -86,6 +89,7 @@ const processSteps: ProcessStep[] = [
         subtitle: "Achieve the Vision",
         description:
             "We help scale your company to its full potential through additional funding rounds, continuous product improvements, and expanding capabilities. Together, we build a profitable, impactful business that reinvests in innovation, maximizing utility and delivering lasting value to the world.*",
+        image: '/images/process/success.svg'
     },
 ];
 
