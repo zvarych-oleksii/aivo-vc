@@ -6,6 +6,7 @@ import {Link} from "react-scroll";
 import DownArrow from "@/components/atoms/icons/DownArrow";
 import {LandingSectionsId} from "@/lib/common/enums/landingSectionsId";
 import LogoCarousel from "@/components/molecules/LogoCarousel/LogoCarousel";
+import SectionTitle from "@/components/atoms/SectionTitle";
 
 const Hero = () => {
     return (
@@ -19,9 +20,11 @@ const Hero = () => {
                 <div className={styles.hero__inner}>
                     <div className={styles.hero__box}>
                         <h1 className={clsx(styles.hero__title, styles.hero__highlight)}>
-                            Building shared success <br/>
-                            One code line at a time
+                            Building shared success
                         </h1>
+                        <SectionTitle className={styles.hero__subTitle}>
+                            One code line at a time
+                        </SectionTitle>
                         <p className={styles.hero__text}>
                             With proven expertise in building and scaling successful software startups, we don’t just
                             code—we co-create. When we believe in your vision, we invest alongside you by reducing our
@@ -47,7 +50,7 @@ const Hero = () => {
                               spy={true}
                               offset={-70}
                         >
-                            <span>All Collaboration Models</span>
+                            <span>Collaboration Models</span>
                             <DownArrow/>
                         </Link>
                     </div>
